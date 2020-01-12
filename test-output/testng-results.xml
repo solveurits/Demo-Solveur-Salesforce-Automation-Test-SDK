@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-12-24T12:03:33 IST" name="Default suite" finished-at="2019-12-24T12:06:36 IST" duration-ms="182985">
+    <groups>
+    </groups>
+    <test started-at="2019-12-24T12:03:33 IST" name="Default test" finished-at="2019-12-24T12:06:36 IST" duration-ms="182985">
+      <class name="testng.SFWithSpecificMethod.OpportunityTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testng.SFWithSpecificMethod.OpportunityTest@7b02881e]" started-at="2019-12-24T12:03:33 IST" name="setupSuite" finished-at="2019-12-24T12:03:33 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testng.SFWithSpecificMethod.OpportunityTest@7b02881e]" started-at="2019-12-24T12:04:08 IST" name="setupTest" finished-at="2019-12-24T12:04:23 IST" duration-ms="14960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Opportunity()[pri:1, instance:testng.SFWithSpecificMethod.OpportunityTest@7b02881e]" started-at="2019-12-24T12:04:23 IST" name="Opportunity" finished-at="2019-12-24T12:04:41 IST" duration-ms="17446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Opportunity -->
+        <test-method signature="addActivity()[pri:2, instance:testng.SFWithSpecificMethod.OpportunityTest@7b02881e]" started-at="2019-12-24T12:04:41 IST" name="addActivity" finished-at="2019-12-24T12:05:03 IST" duration-ms="22383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addActivity -->
+        <test-method signature="addChatter()[pri:3, instance:testng.SFWithSpecificMethod.OpportunityTest@7b02881e]" started-at="2019-12-24T12:05:03 IST" name="addChatter" finished-at="2019-12-24T12:05:18 IST" duration-ms="14470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addChatter -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testng.SFWithSpecificMethod.OpportunityTest@7b02881e]" started-at="2019-12-24T12:06:34 IST" name="teardown" finished-at="2019-12-24T12:06:36 IST" duration-ms="2497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testng.SFWithSpecificMethod.OpportunityTest -->
+      <class name="testng.SFWithSpecificMethod.ChatterTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testng.SFWithSpecificMethod.ChatterTest@1ebd319f]" started-at="2019-12-24T12:03:33 IST" name="setupSuite" finished-at="2019-12-24T12:03:33 IST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testng.SFWithSpecificMethod.ChatterTest@1ebd319f]" started-at="2019-12-24T12:03:52 IST" name="setupTest" finished-at="2019-12-24T12:04:08 IST" duration-ms="16502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Chatter()[pri:0, instance:testng.SFWithSpecificMethod.ChatterTest@1ebd319f]" started-at="2019-12-24T12:05:18 IST" name="Chatter" finished-at="2019-12-24T12:05:30 IST" duration-ms="12722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Chatter -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testng.SFWithSpecificMethod.ChatterTest@1ebd319f]" started-at="2019-12-24T12:06:31 IST" name="teardown" finished-at="2019-12-24T12:06:34 IST" duration-ms="2637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testng.SFWithSpecificMethod.ChatterTest -->
+      <class name="testng.SFWithSpecificMethod.AccountTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testng.SFWithSpecificMethod.AccountTest@3c0be339]" started-at="2019-12-24T12:03:33 IST" name="setupSuite" finished-at="2019-12-24T12:03:33 IST" duration-ms="600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testng.SFWithSpecificMethod.AccountTest@3c0be339]" started-at="2019-12-24T12:03:33 IST" name="setupTest" finished-at="2019-12-24T12:03:52 IST" duration-ms="18560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="createAccount()[pri:1, instance:testng.SFWithSpecificMethod.AccountTest@3c0be339]" started-at="2019-12-24T12:05:31 IST" name="createAccount" finished-at="2019-12-24T12:05:55 IST" duration-ms="24836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method signature="addActivity()[pri:2, instance:testng.SFWithSpecificMethod.AccountTest@3c0be339]" started-at="2019-12-24T12:05:55 IST" name="addActivity" finished-at="2019-12-24T12:06:13 IST" duration-ms="17721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addActivity -->
+        <test-method signature="addChatter()[pri:3, instance:testng.SFWithSpecificMethod.AccountTest@3c0be339]" started-at="2019-12-24T12:06:13 IST" name="addChatter" finished-at="2019-12-24T12:06:29 IST" duration-ms="15930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addChatter -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testng.SFWithSpecificMethod.AccountTest@3c0be339]" started-at="2019-12-24T12:06:29 IST" name="teardown" finished-at="2019-12-24T12:06:31 IST" duration-ms="2218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testng.SFWithSpecificMethod.AccountTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

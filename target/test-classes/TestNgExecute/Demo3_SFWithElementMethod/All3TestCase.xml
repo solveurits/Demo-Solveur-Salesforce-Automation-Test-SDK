@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SolveurITSDemo" verbose="2" parallel="tests" thread-count="3"
+    data-provider-thread-count="3">
+    <test name="Account">   
+        <classes>
+            <class name="testng.Demo2_SFGlobalMethods.AccountTest"/>
+        </classes>
+    </test>
+    <test name="Opportunity">
+        <classes>
+            <class name="testng.Demo2_SFGlobalMethods.OpportunityTest"/>
+        </classes>
+    </test>    
+    <test  name="Chatter">
+        <classes>
+            <class name="testng.Demo2_SFGlobalMethods.ChatterTest"/>
+        </classes>
+    </test>
+</suite>

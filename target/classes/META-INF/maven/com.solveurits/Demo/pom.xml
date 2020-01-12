@@ -29,34 +29,21 @@
 	</build>
 		<dependencies>
 		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
-		</dependency>
+  <groupId>com.solveurits</groupId>
+  <artifactId>solveurAutomation</artifactId>
+  <version>0.1beta</version>
+</dependency>
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.12</version>
+    <scope>test</scope>
+</dependency>
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.0.0</version>
-    <scope>test</scope>
-</dependency>
-<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-java</artifactId>
-    <version>4.8.0</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/net.serenity-bdd/serenity-cucumber4 -->
-<dependency>
-    <groupId>net.serenity-bdd</groupId>
-    <artifactId>serenity-cucumber4</artifactId>
-    <version>1.0.29</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/junit/junit -->
-<dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.12</version>
     <scope>test</scope>
 </dependency>
 <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
@@ -65,32 +52,11 @@
     <artifactId>webdrivermanager</artifactId>
     <version>3.7.1</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/com.codeborne/phantomjsdriver -->
-<dependency>
-    <groupId>com.codeborne</groupId>
-    <artifactId>phantomjsdriver</artifactId>
-    <version>1.4.4</version>
-</dependency>
         <!-- https://mvnrepository.com/artifact/com.codoid.products/fillo -->
 		<dependency>
     		<groupId>com.codoid.products</groupId>
     		<artifactId>fillo</artifactId>
     		<version>1.21</version>
-		</dependency>
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
-		</dependency>
-		<dependency>
-			<groupId>com.segment.analytics.java</groupId>
-			<artifactId>analytics</artifactId>
-			<version>2.1.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.googlecode.json-simple</groupId>
-			<artifactId>json-simple</artifactId>
-			<version>1.1</version>
 		</dependency>
 	</dependencies>
 	</project>

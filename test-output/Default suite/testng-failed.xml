@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng.GlobalSearch.AccountTest">
+      <class name="testcase.Demo2_SFGlobalMethods.OpportunityTest">
         <methods>
-          <include name="setupTest"/>
-          <include name="createAccount"/>
-          <include name="setupClass"/>
+          <include name="addActivity"/>
           <include name="teardown"/>
+          <include name="setupTest"/>
+          <include name="setupSuite"/>
         </methods>
-      </class> <!-- testng.GlobalSearch.AccountTest -->
+      </class> <!-- testcase.Demo2_SFGlobalMethods.OpportunityTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

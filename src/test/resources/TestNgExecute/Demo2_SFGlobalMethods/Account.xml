@@ -2,7 +2,7 @@
 <suite name="SolveurITSDemo" verbose="2">
     <test name="Account">   
         <classes>
-            <class name="testng.Demo2_SFGlobalMethods.AccountTest"/>
+            <class name="testcase.Demo2_SFGlobalMethods.AccountTest"/>
         </classes>
     </test>
 </suite>

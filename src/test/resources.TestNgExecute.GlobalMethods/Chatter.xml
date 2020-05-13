@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="SolveurITSDemo" verbose="2">
-    <test  name="Chatter">
-        <classes>
-            <class name="testng.GlobalMethods.ChatterTest"/>
-        </classes>
-    </test>
-</suite>

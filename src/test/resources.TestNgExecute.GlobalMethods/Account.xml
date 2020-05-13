@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="SolveurITSDemo" verbose="2">
-    <test name="Account">   
-        <classes>
-            <class name="testng.GlobalMethods.AccountTest"/>
-        </classes>
-    </test>
-</suite>

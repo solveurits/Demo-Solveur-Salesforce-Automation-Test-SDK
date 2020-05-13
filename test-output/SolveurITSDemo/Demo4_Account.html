@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>TestNG:  Demo4_Account</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Demo4_Account</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 12 21:28:53 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>287 seconds (287426 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcase.Demo2_SFGlobalMethods.ChatterTest.Chatter()'><b>Chatter</b><br>Test class: testcase.Demo2_SFGlobalMethods.ChatterTest</td>
+<td></td>
+<td>126</td>
+<td>testcase.Demo2_SFGlobalMethods.ChatterTest@48e4374</td></tr>
+<tr>
+<td title='testcase.Demo3_SFWithElementMethod.ChatterTest.Chatter()'><b>Chatter</b><br>Test class: testcase.Demo3_SFWithElementMethod.ChatterTest</td>
+<td></td>
+<td>70</td>
+<td>testcase.Demo3_SFWithElementMethod.ChatterTest@e056f20</td></tr>
+<tr>
+<td title='testcase.Demo2_SFGlobalMethods.OpportunityTest.Opportunity()'><b>Opportunity</b><br>Test class: testcase.Demo2_SFGlobalMethods.OpportunityTest</td>
+<td></td>
+<td>123</td>
+<td>testcase.Demo2_SFGlobalMethods.OpportunityTest@1d119efb</td></tr>
+<tr>
+<td title='testcase.Demo3_SFWithElementMethod.OpportunityTest.Opportunity()'><b>Opportunity</b><br>Test class: testcase.Demo3_SFWithElementMethod.OpportunityTest</td>
+<td></td>
+<td>83</td>
+<td>testcase.Demo3_SFWithElementMethod.OpportunityTest@2e4b8173</td></tr>
+<tr>
+<td title='testcase.Demo2_SFGlobalMethods.OpportunityTest.addActivity()'><b>addActivity</b><br>Test class: testcase.Demo2_SFGlobalMethods.OpportunityTest</td>
+<td></td>
+<td>132</td>
+<td>testcase.Demo2_SFGlobalMethods.OpportunityTest@1d119efb</td></tr>
+<tr>
+<td title='testcase.Demo2_SFGlobalMethods.AccountTest.addActivity()'><b>addActivity</b><br>Test class: testcase.Demo2_SFGlobalMethods.AccountTest</td>
+<td></td>
+<td>96</td>
+<td>testcase.Demo2_SFGlobalMethods.AccountTest@6ef888f6</td></tr>
+<tr>
+<td title='testcase.Demo3_SFWithElementMethod.OpportunityTest.addActivity()'><b>addActivity</b><br>Test class: testcase.Demo3_SFWithElementMethod.OpportunityTest</td>
+<td></td>
+<td>87</td>
+<td>testcase.Demo3_SFWithElementMethod.OpportunityTest@2e4b8173</td></tr>
+<tr>
+<td title='testcase.Demo3_SFWithElementMethod.AccountTest.addActivity()'><b>addActivity</b><br>Test class: testcase.Demo3_SFWithElementMethod.AccountTest</td>
+<td></td>
+<td>102</td>
+<td>testcase.Demo3_SFWithElementMethod.AccountTest@cd3fee8</td></tr>
+<tr>
+<td title='testcase.Demo4_SFWithSpecificMethod.AccountTest.addActivity()'><b>addActivity</b><br>Test class: testcase.Demo4_SFWithSpecificMethod.AccountTest</td>
+<td></td>
+<td>45</td>
+<td>testcase.Demo4_SFWithSpecificMethod.AccountTest@6580cfdd</td></tr>
+<tr>
+<td title='testcase.Demo2_SFGlobalMethods.OpportunityTest.addChatter()'><b>addChatter</b><br>Test class: testcase.Demo2_SFGlobalMethods.OpportunityTest</td>
+<td></td>
+<td>80</td>
+<td>testcase.Demo2_SFGlobalMethods.OpportunityTest@1d119efb</td></tr>
+<tr>
+<td title='testcase.Demo2_SFGlobalMethods.AccountTest.addChatter()'><b>addChatter</b><br>Test class: testcase.Demo2_SFGlobalMethods.AccountTest</td>
+<td></td>
+<td>90</td>
+<td>testcase.Demo2_SFGlobalMethods.AccountTest@6ef888f6</td></tr>
+<tr>
+<td title='testcase.Demo3_SFWithElementMethod.OpportunityTest.addChatter()'><b>addChatter</b><br>Test class: testcase.Demo3_SFWithElementMethod.OpportunityTest</td>
+<td></td>
+<td>88</td>
+<td>testcase.Demo3_SFWithElementMethod.OpportunityTest@2e4b8173</td></tr>
+<tr>
+<td title='testcase.Demo3_SFWithElementMethod.AccountTest.addChatter()'><b>addChatter</b><br>Test class: testcase.Demo3_SFWithElementMethod.AccountTest</td>
+<td></td>
+<td>117</td>
+<td>testcase.Demo3_SFWithElementMethod.AccountTest@cd3fee8</td></tr>
+<tr>
+<td title='testcase.Demo4_SFWithSpecificMethod.AccountTest.addChatter()'><b>addChatter</b><br>Test class: testcase.Demo4_SFWithSpecificMethod.AccountTest</td>
+<td></td>
+<td>44</td>
+<td>testcase.Demo4_SFWithSpecificMethod.AccountTest@6580cfdd</td></tr>
+<tr>
+<td title='testcase.Demo2_SFGlobalMethods.AccountTest.createAccount()'><b>createAccount</b><br>Test class: testcase.Demo2_SFGlobalMethods.AccountTest</td>
+<td></td>
+<td>231</td>
+<td>testcase.Demo2_SFGlobalMethods.AccountTest@6ef888f6</td></tr>
+<tr>
+<td title='testcase.Demo3_SFWithElementMethod.AccountTest.createAccount()'><b>createAccount</b><br>Test class: testcase.Demo3_SFWithElementMethod.AccountTest</td>
+<td></td>
+<td>198</td>
+<td>testcase.Demo3_SFWithElementMethod.AccountTest@cd3fee8</td></tr>
+<tr>
+<td title='testcase.Demo4_SFWithSpecificMethod.AccountTest.createAccount()'><b>createAccount</b><br>Test class: testcase.Demo4_SFWithSpecificMethod.AccountTest</td>
+<td></td>
+<td>152</td>
+<td>testcase.Demo4_SFWithSpecificMethod.AccountTest@6580cfdd</td></tr>
+<tr>
+<td title='testcase.Demo1_GlobalSearch.SFGlobalSearch.globalSearch()'><b>globalSearch</b><br>Test class: testcase.Demo1_GlobalSearch.SFGlobalSearch</td>
+<td></td>
+<td>113</td>
+<td>testcase.Demo1_GlobalSearch.SFGlobalSearch@7c469c48</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SolveurITSDemo" verbose="2" parallel="tests" thread-count="4">
+    
+     <test name="Demo1_GlobalSearch">   
+        <classes>
+            <class name="testcase.Demo1_GlobalSearch.SFGlobalSearch"/>
+        </classes>
+    </test>
+    
+    <test name="Demo2_Account">   
+        <classes>
+            <class name="testcase.Demo2_SFGlobalMethods.AccountTest"/>
+        </classes>
+    </test>
+    <test name="Demo2_Opportunity">
+        <classes>
+            <class name="testcase.Demo2_SFGlobalMethods.OpportunityTest"/>
+        </classes>
+    </test>    
+    <test  name="Demo2_Chatter">
+        <classes>
+            <class name="testcase.Demo2_SFGlobalMethods.ChatterTest"/>
+        </classes>
+    </test>
+    
+     <test name="Demo3_Account">   
+        <classes>
+            <class name="testcase.Demo3_SFWithElementMethod.AccountTest"/>
+        </classes>
+    </test>
+    <test name="Demo3_Opportunity">
+        <classes>
+            <class name="testcase.Demo3_SFWithElementMethod.OpportunityTest"/>
+        </classes>
+    </test>    
+    <test  name="Demo3_Chatter">
+        <classes>
+            <class name="testcase.Demo3_SFWithElementMethod.ChatterTest"/>
+        </classes>
+    </test>
+    
+        <test name="Demo4_Account">   
+        <classes>
+            <class name="testcase.Demo4_SFWithSpecificMethod.AccountTest"/>
+        </classes>
+    </test>
+    <test name="Demo4_Opportunity">
+        <classes>
+            <class name="testcase.Demo4_SFWithSpecificMethod.OpportunityTest"/>
+        </classes>
+    </test>    
+    <test  name="Demo4_Chatter">
+        <classes>
+            <class name="testcase.Demo4_SFWithSpecificMethod.ChatterTest"/>
+        </classes>
+    </test>
+</suite>

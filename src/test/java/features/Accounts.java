@@ -183,7 +183,7 @@ public class Accounts {
         String annualRevenue=currencyFormatter.format(Double.parseDouble(data.getField("Annual Revenue"))).replace(".00", "");
         sf.sfVerifyFormDetailShouldContain(driver, accountPage.annualRevenue,annualRevenue, timeoutSeconds);
         sf.sfVerifyFormDetailShouldBe(driver, accountPage.sicCode, data.getField("SIC Code"), timeoutSeconds);
-        sf.sfVerifyFormDetailShouldBe(driver, accountPage.checkbox123, data.getField("checkbox123"), timeoutSeconds);
+        sf.sfVerifyFormDetailCheckboxShouldBe(driver, accountPage.checkbox123, data.getField("checkbox123"), timeoutSeconds);
         sf.sfVerifyFormDetailShouldContain(driver, accountPage.datetime123, data.getField("datetime123"), timeoutSeconds);
         sf.sfVerifyFormDetailShouldBe(driver, accountPage.email12, data.getField("email12"), timeoutSeconds);
         sf.sfVerifyFormDetailShouldContain(driver, accountPage.time12, data.getField("time12").replace("AM","").trim(), 20);

@@ -2,7 +2,7 @@
 <suite name="SolveurITSDemo" verbose="2">
     <test name="Opportunity">
         <classes>
-            <class name="testng.Demo2_SFGlobalMethods.OpportunityTest"/>
+            <class name="testcase.Demo3_SFWithElementMethod.OpportunityTest"/>
         </classes>
     </test>    
 </suite>

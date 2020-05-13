@@ -28,11 +28,16 @@
 		</plugins>
 	</build>
 		<dependencies>
-		<dependency>
+<!-- 		<dependency>
   <groupId>com.solveurits</groupId>
   <artifactId>solveurAutomation</artifactId>
   <version>0.1beta</version>
-</dependency>
+</dependency> -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
 <dependency>
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>

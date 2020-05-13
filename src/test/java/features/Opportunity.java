@@ -122,8 +122,8 @@ public class Opportunity {
         Locale locale = new Locale("en", "US");      
         NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(locale);
         String amount=currencyFormatter.format(Double.parseDouble(data.getField("Amount")));
-        sf.sfVerifyFormDetailShouldContain(driver, opportunityPage.amount,amount,timeoutSeconds);
-        sf.sfVerifyFormDetailShouldBe(driver, opportunityPage.private1,data.getField("Private"),timeoutSeconds);
+        sf.sfVerifyFormDetailShouldBe(driver, opportunityPage.amount,amount,timeoutSeconds);
+        sf.sfVerifyFormDetailCheckboxShouldBe(driver, opportunityPage.private1,data.getField("Private"),timeoutSeconds);
         sf.sfVerifyFormDetailShouldBe(driver, opportunityPage.closeDate,data.getField("Close Date"),timeoutSeconds);
         sf.sfVerifyFormDetailShouldBe(driver, opportunityPage.opportunityName,data.getField("Opportunity Name"),timeoutSeconds);
         sf.sfVerifyFormDetailShouldBe(driver, opportunityPage.accountName,data.getField("Account Name"),timeoutSeconds);
@@ -228,10 +228,6 @@ public class Opportunity {
         WebElement closeDate=sf.sfGetFormFieldElement(driver, "Close Date",timeoutSeconds);
         closeDate.sendKeys(data.getField("Close Date"));
         System.out.println("Close Date :- "+closeDate.getAttribute("value"));
-
-        WebElement closeDate=sf.sfGetFormFieldElement(driver, "Opportunity Name",timeoutSeconds);
-        closeDate.sendKeys(data.getField("Opportunity Name"));
-        System.out.println("Opportunity Name :- "+closeDate.getAttribute("value"));
 
         sf.sfCheckBoxRadio(driver, opportunityPage.private1,data.getField("Private"),timeoutSeconds);
         sf.sfInputText(driver, opportunityPage.opportunityName,data.getField("Opportunity Name"),timeoutSeconds);

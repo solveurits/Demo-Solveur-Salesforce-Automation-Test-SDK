@@ -1,37 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-12T21:43:13 IST" name="SolveurITSDemo" finished-at="2020-05-12T21:45:46 IST" duration-ms="152969">
+  <suite started-at="2020-05-14T08:58:42 IST" name="SolveurITSDemo" finished-at="2020-05-14T09:08:31 IST" duration-ms="588493">
     <groups>
     </groups>
-    <test started-at="2020-05-12T21:43:13 IST" name="Opportunity" finished-at="2020-05-12T21:45:46 IST" duration-ms="152969">
-      <class name="testcase.Demo4_SFWithSpecificMethod.OpportunityTest">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testcase.Demo4_SFWithSpecificMethod.OpportunityTest@4313f5bc]" started-at="2020-05-12T21:43:11 IST" name="setupSuite" finished-at="2020-05-12T21:43:13 IST" duration-ms="1239" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:testcase.Demo4_SFWithSpecificMethod.OpportunityTest@4313f5bc]" started-at="2020-05-12T21:43:13 IST" name="setupTest" finished-at="2020-05-12T21:43:45 IST" duration-ms="32461" status="PASS">
+    <test started-at="2020-05-14T08:58:42 IST" name="Demo3_Opportunity" finished-at="2020-05-14T09:02:08 IST" duration-ms="206039">
+      <class name="testcase.Demo3_SFWithElementMethod.OpportunityTest">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testcase.Demo3_SFWithElementMethod.OpportunityTest@cd3fee8]" started-at="2020-05-14T08:58:42 IST" name="setupTest" finished-at="2020-05-14T08:59:06 IST" duration-ms="23468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Opportunity()[pri:1, instance:testcase.Demo4_SFWithSpecificMethod.OpportunityTest@4313f5bc]" started-at="2020-05-12T21:43:45 IST" name="Opportunity" finished-at="2020-05-12T21:44:21 IST" duration-ms="35663" status="PASS">
+        <test-method signature="Opportunity()[pri:0, instance:testcase.Demo3_SFWithElementMethod.OpportunityTest@cd3fee8]" started-at="2020-05-14T08:59:06 IST" name="Opportunity" finished-at="2020-05-14T09:02:03 IST" duration-ms="177163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Opportunity -->
-        <test-method signature="addActivity()[pri:2, instance:testcase.Demo4_SFWithSpecificMethod.OpportunityTest@4313f5bc]" started-at="2020-05-12T21:44:21 IST" name="addActivity" finished-at="2020-05-12T21:45:05 IST" duration-ms="43760" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addActivity -->
-        <test-method signature="addChatter()[pri:3, instance:testcase.Demo4_SFWithSpecificMethod.OpportunityTest@4313f5bc]" started-at="2020-05-12T21:45:05 IST" name="addChatter" finished-at="2020-05-12T21:45:43 IST" duration-ms="38171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addChatter -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcase.Demo4_SFWithSpecificMethod.OpportunityTest@4313f5bc]" started-at="2020-05-12T21:45:43 IST" name="teardown" finished-at="2020-05-12T21:45:46 IST" duration-ms="2768" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcase.Demo3_SFWithElementMethod.OpportunityTest@cd3fee8]" started-at="2020-05-14T09:02:03 IST" name="teardown" finished-at="2020-05-14T09:02:08 IST" duration-ms="5368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
+      </class> <!-- testcase.Demo3_SFWithElementMethod.OpportunityTest -->
+    </test> <!-- Demo3_Opportunity -->
+    <test started-at="2020-05-14T09:07:21 IST" name="Demo4_Chatter" finished-at="2020-05-14T09:08:31 IST" duration-ms="69329">
+      <class name="testcase.Demo4_SFWithSpecificMethod.OpportunityTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testcase.Demo4_SFWithSpecificMethod.OpportunityTest@6a28ffa4]" started-at="2020-05-14T08:52:13 IST" name="setupSuite" finished-at="2020-05-14T08:52:13 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
       </class> <!-- testcase.Demo4_SFWithSpecificMethod.OpportunityTest -->
-    </test> <!-- Opportunity -->
+      <class name="testcase.Demo4_SFWithSpecificMethod.ChatterTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testcase.Demo4_SFWithSpecificMethod.ChatterTest@5c30a9b0]" started-at="2020-05-14T08:52:13 IST" name="setupSuite" finished-at="2020-05-14T08:52:13 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testcase.Demo4_SFWithSpecificMethod.ChatterTest@5c30a9b0]" started-at="2020-05-14T09:07:21 IST" name="setupTest" finished-at="2020-05-14T09:07:56 IST" duration-ms="34528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Chatter()[pri:0, instance:testcase.Demo4_SFWithSpecificMethod.ChatterTest@5c30a9b0]" started-at="2020-05-14T09:07:56 IST" name="Chatter" finished-at="2020-05-14T09:08:27 IST" duration-ms="31614" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Element not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Element not found
+at com.solveurits.automation.SalesforceAT.sfGetTabWebElementMethod(SalesforceAT.java:1484)
+at com.solveurits.automation.SalesforceAT.sfGetTabWebElement(SalesforceAT.java:1477)
+at com.solveurits.automation.SalesforceAT.sfClickTabMethod(SalesforceAT.java:1454)
+at com.solveurits.automation.SalesforceAT.sfClickTab(SalesforceAT.java:1446)
+at features.Chatter.clickPostTab(Chatter.java:51)
+at features.Chatter.addPostChatterWithSpecificMethod(Chatter.java:152)
+at testcase.Demo4_SFWithSpecificMethod.ChatterTest.Chatter(ChatterTest.java:92)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:830)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Chatter -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcase.Demo4_SFWithSpecificMethod.ChatterTest@5c30a9b0]" started-at="2020-05-14T09:08:27 IST" name="teardown" finished-at="2020-05-14T09:08:31 IST" duration-ms="3183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testcase.Demo4_SFWithSpecificMethod.ChatterTest -->
+      <class name="testcase.Demo3_SFWithElementMethod.AccountTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testcase.Demo3_SFWithElementMethod.AccountTest@48e4374]" started-at="2020-05-14T08:52:13 IST" name="setupSuite" finished-at="2020-05-14T08:52:13 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+      </class> <!-- testcase.Demo3_SFWithElementMethod.AccountTest -->
+      <class name="testcase.Demo2_SFGlobalMethods.OpportunityTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testcase.Demo2_SFGlobalMethods.OpportunityTest@bef2d72]" started-at="2020-05-14T08:52:12 IST" name="setupSuite" finished-at="2020-05-14T08:52:13 IST" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+      </class> <!-- testcase.Demo2_SFGlobalMethods.OpportunityTest -->
+      <class name="testcase.Demo3_SFWithElementMethod.ChatterTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testcase.Demo3_SFWithElementMethod.ChatterTest@2e4b8173]" started-at="2020-05-14T08:52:13 IST" name="setupSuite" finished-at="2020-05-14T08:52:13 IST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+      </class> <!-- testcase.Demo3_SFWithElementMethod.ChatterTest -->
+      <class name="testcase.Demo1_GlobalSearch.SFGlobalSearch">
+        <test-method is-config="true" signature="setupClass()[pri:0, instance:testcase.Demo1_GlobalSearch.SFGlobalSearch@647fd8ce]" started-at="2020-05-14T08:52:11 IST" name="setupClass" finished-at="2020-05-14T08:52:12 IST" duration-ms="1179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+      </class> <!-- testcase.Demo1_GlobalSearch.SFGlobalSearch -->
+      <class name="testcase.Demo2_SFGlobalMethods.AccountTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testcase.Demo2_SFGlobalMethods.AccountTest@ef9296d]" started-at="2020-05-14T08:52:12 IST" name="setupSuite" finished-at="2020-05-14T08:52:12 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+      </class> <!-- testcase.Demo2_SFGlobalMethods.AccountTest -->
+      <class name="testcase.Demo2_SFGlobalMethods.ChatterTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testcase.Demo2_SFGlobalMethods.ChatterTest@49b0b76]" started-at="2020-05-14T08:52:13 IST" name="setupSuite" finished-at="2020-05-14T08:52:13 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+      </class> <!-- testcase.Demo2_SFGlobalMethods.ChatterTest -->
+      <class name="testcase.Demo4_SFWithSpecificMethod.AccountTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testcase.Demo4_SFWithSpecificMethod.AccountTest@64cd705f]" started-at="2020-05-14T08:52:13 IST" name="setupSuite" finished-at="2020-05-14T08:52:13 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+      </class> <!-- testcase.Demo4_SFWithSpecificMethod.AccountTest -->
+      <class name="testcase.Demo3_SFWithElementMethod.OpportunityTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testcase.Demo3_SFWithElementMethod.OpportunityTest@cd3fee8]" started-at="2020-05-14T08:52:13 IST" name="setupSuite" finished-at="2020-05-14T08:52:13 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+      </class> <!-- testcase.Demo3_SFWithElementMethod.OpportunityTest -->
+    </test> <!-- Demo4_Chatter -->
   </suite> <!-- SolveurITSDemo -->
 </testng-results>

@@ -9,12 +9,27 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">SolveurITSDemo</th></tr>
-<tr><td><a href="#t0">Opportunity</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">152,969</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Demo3_Opportunity</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">206,039</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Demo4_Chatter</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">69,329</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">275,368</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SolveurITSDemo</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Opportunity &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">testcase.Demo4_SFWithSpecificMethod.OpportunityTest</td><td><a href="#m0">Opportunity</a></td><td rowspan="1">1589300025793</td><td rowspan="1">35663</td></tr><tr class="passedeven"><td><a href="#m1">addActivity</a></td><td rowspan="1">1589300061468</td><td rowspan="1">43760</td></tr><tr class="passedeven"><td><a href="#m2">addChatter</a></td><td rowspan="1">1589300105233</td><td rowspan="1">38171</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SolveurITSDemo</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Demo3_Opportunity &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcase.Demo3_SFWithElementMethod.OpportunityTest</td><td><a href="#m0">Opportunity</a></td><td rowspan="1">1589426946042</td><td rowspan="1">177163</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Demo4_Chatter &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcase.Demo4_SFWithSpecificMethod.ChatterTest</td><td><a href="#m1">Chatter</a></td><td rowspan="1">1589427476236</td><td rowspan="1">31614</td></tr></tbody>
 </table>
-<h2>Opportunity</h2><h3 id="m0">testcase.Demo4_SFWithSpecificMethod.OpportunityTest#Opportunity</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcase.Demo4_SFWithSpecificMethod.OpportunityTest#addActivity</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testcase.Demo4_SFWithSpecificMethod.OpportunityTest#addChatter</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Demo3_Opportunity</h2><h3 id="m0">testcase.Demo3_SFWithElementMethod.OpportunityTest#Opportunity</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Demo4_Chatter</h2><h3 id="m1">testcase.Demo4_SFWithSpecificMethod.ChatterTest#Chatter</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Element not found
+	at com.solveurits.automation.SalesforceAT.sfGetTabWebElementMethod(SalesforceAT.java:1484)
+	at com.solveurits.automation.SalesforceAT.sfGetTabWebElement(SalesforceAT.java:1477)
+	at com.solveurits.automation.SalesforceAT.sfClickTabMethod(SalesforceAT.java:1454)
+	at com.solveurits.automation.SalesforceAT.sfClickTab(SalesforceAT.java:1446)
+	at features.Chatter.clickPostTab(Chatter.java:51)
+	at features.Chatter.addPostChatterWithSpecificMethod(Chatter.java:152)
+	at testcase.Demo4_SFWithSpecificMethod.ChatterTest.Chatter(ChatterTest.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

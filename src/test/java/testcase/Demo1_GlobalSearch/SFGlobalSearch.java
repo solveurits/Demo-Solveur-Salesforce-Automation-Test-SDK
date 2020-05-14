@@ -1,6 +1,7 @@
 package testcase.Demo1_GlobalSearch;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -24,16 +25,15 @@ public class SFGlobalSearch {
 
     @BeforeSuite
     public static void setupClass() {
-        WebDriverManager.chromedriver().setup();   //WebDriverManager directly downloads driver based on browser version
-        //To set Driver property manually, remove above line & set path of driver below
-        //System.setProperty("webdriver.chrome.driver","C:\\Users\\bryogeesh\\Videos\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();   
     }
 
     @BeforeTest
     public void setupTest() throws FilloException {
-    	driver = new ChromeDriver();
-    	//Maximize
-    	driver.manage().window().maximize();
+    	ChromeOptions ops = new ChromeOptions();
+        ops.addArguments("--disable-notifications");
+        ops.addArguments("start-maximized");
+    	driver = new ChromeDriver(ops);
     	//Navigate URL
 //        driver.get("http://login.Salesforce.com/");
     	driver.get("https://ap15.lightning.force.com/lightning/page/home");

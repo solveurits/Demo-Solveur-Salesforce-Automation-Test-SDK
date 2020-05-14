@@ -1,6 +1,7 @@
 package testcase.Demo4_SFWithSpecificMethod;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -42,7 +43,10 @@ public class ChatterTest {
 
     @BeforeTest
     public void setupTest() throws FilloException {
-    	driver = new ChromeDriver();
+    	ChromeOptions ops = new ChromeOptions();
+        ops.addArguments("--disable-notifications");
+        ops.addArguments("start-maximized");
+    	driver = new ChromeDriver(ops);
     	//Maximize
     	driver.manage().window().maximize();
     	//Navigate URL

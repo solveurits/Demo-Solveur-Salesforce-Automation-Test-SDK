@@ -1,6 +1,7 @@
 package testcase.Demo2_SFGlobalMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -44,7 +45,10 @@ public class OpportunityTest {
 
     @BeforeTest
     public void setupTest() throws FilloException {
-    	driver = new ChromeDriver();
+    	ChromeOptions ops = new ChromeOptions();
+        ops.addArguments("--disable-notifications");
+        ops.addArguments("start-maximized");
+    	driver = new ChromeDriver(ops);
     	//Maximize
     	driver.manage().window().maximize();
     	//Navigate URL
@@ -72,9 +76,16 @@ public class OpportunityTest {
             driver.quit();
         }
     }
+    
+    @Test
+    public void Opportunity () throws FilloException
+    {
+    	CreateOpportunity();
+    	addActivity();
+    	addChatter();
+    }
 
-    @Test(priority = 1)
-    public void Opportunity() throws FilloException {
+    public void CreateOpportunity() throws FilloException {
     	int timeoutSeconds=30;
     	//Extract Data from Excel Sheet
     	Connection connectionOpportunity=fillo.getConnection(System.getProperty("user.dir")+"\\src\\test\\java\\testData\\opportunity.xlsx");
@@ -86,7 +97,6 @@ public class OpportunityTest {
     	opportunity.createOpportunityAndVerify(driver, dataOpportunity, timeoutSeconds);
     }
 
-    @Test(priority = 2)
     public void addActivity() throws FilloException
     {
     	int timeoutSeconds=30;
@@ -107,7 +117,6 @@ public class OpportunityTest {
     	activity.addNewEventActivity(driver, dataActivity, timeoutSeconds);
     }
     
-    @Test(priority = 3)
     public void addChatter() throws FilloException
     {
     	int timeoutSeconds=30;

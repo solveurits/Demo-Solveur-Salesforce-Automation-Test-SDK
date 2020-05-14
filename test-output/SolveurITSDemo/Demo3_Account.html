@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Demo3_Account</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 12 21:23:03 IST 2020</td>
+<td>Started on:</td><td>Thu May 14 08:57:33 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>492 seconds (492026 ms)</td>
+<tr><td>Total time:</td><td>298 seconds (298487 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,64 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcase.Demo2_SFGlobalMethods.ChatterTest.Chatter()'><b>Chatter</b><br>Test class: testcase.Demo2_SFGlobalMethods.ChatterTest</td>
+<td><div><pre>java.lang.RuntimeException: Element not found
+	at com.solveurits.automation.SalesforceAT.sfGetTabWebElementMethod(SalesforceAT.java:1484)
+	at com.solveurits.automation.SalesforceAT.sfGetTabWebElement(SalesforceAT.java:1477)
+	at com.solveurits.automation.SalesforceAT.sfClickTabMethod(SalesforceAT.java:1454)
+	at com.solveurits.automation.SalesforceAT.sfClickTab(SalesforceAT.java:1446)
+	at features.Chatter.clickPostTab(Chatter.java:51)
+	at features.Chatter.addPostChatter(Chatter.java:113)
+	at testcase.Demo2_SFGlobalMethods.ChatterTest.Chatter(ChatterTest.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1709380557", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1709380557'><pre>java.lang.RuntimeException: Element not found
+	at com.solveurits.automation.SalesforceAT.sfGetTabWebElementMethod(SalesforceAT.java:1484)
+	at com.solveurits.automation.SalesforceAT.sfGetTabWebElement(SalesforceAT.java:1477)
+	at com.solveurits.automation.SalesforceAT.sfClickTabMethod(SalesforceAT.java:1454)
+	at com.solveurits.automation.SalesforceAT.sfClickTab(SalesforceAT.java:1446)
+	at features.Chatter.clickPostTab(Chatter.java:51)
+	at features.Chatter.addPostChatter(Chatter.java:113)
+	at testcase.Demo2_SFGlobalMethods.ChatterTest.Chatter(ChatterTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+</pre></div></td>
+<td>46</td>
+<td>testcase.Demo2_SFGlobalMethods.ChatterTest@49b0b76</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,60 +133,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcase.Demo2_SFGlobalMethods.ChatterTest.Chatter()'><b>Chatter</b><br>Test class: testcase.Demo2_SFGlobalMethods.ChatterTest</td>
-<td></td>
-<td>126</td>
-<td>testcase.Demo2_SFGlobalMethods.ChatterTest@48e4374</td></tr>
-<tr>
 <td title='testcase.Demo2_SFGlobalMethods.OpportunityTest.Opportunity()'><b>Opportunity</b><br>Test class: testcase.Demo2_SFGlobalMethods.OpportunityTest</td>
 <td></td>
-<td>123</td>
-<td>testcase.Demo2_SFGlobalMethods.OpportunityTest@1d119efb</td></tr>
+<td>168</td>
+<td>testcase.Demo2_SFGlobalMethods.OpportunityTest@bef2d72</td></tr>
 <tr>
-<td title='testcase.Demo2_SFGlobalMethods.OpportunityTest.addActivity()'><b>addActivity</b><br>Test class: testcase.Demo2_SFGlobalMethods.OpportunityTest</td>
+<td title='testcase.Demo2_SFGlobalMethods.AccountTest.account()'><b>account</b><br>Test class: testcase.Demo2_SFGlobalMethods.AccountTest</td>
 <td></td>
-<td>132</td>
-<td>testcase.Demo2_SFGlobalMethods.OpportunityTest@1d119efb</td></tr>
+<td>269</td>
+<td>testcase.Demo2_SFGlobalMethods.AccountTest@ef9296d</td></tr>
 <tr>
-<td title='testcase.Demo2_SFGlobalMethods.AccountTest.addActivity()'><b>addActivity</b><br>Test class: testcase.Demo2_SFGlobalMethods.AccountTest</td>
+<td title='testcase.Demo3_SFWithElementMethod.AccountTest.account()'><b>account</b><br>Test class: testcase.Demo3_SFWithElementMethod.AccountTest</td>
 <td></td>
-<td>96</td>
-<td>testcase.Demo2_SFGlobalMethods.AccountTest@6ef888f6</td></tr>
-<tr>
-<td title='testcase.Demo3_SFWithElementMethod.AccountTest.addActivity()'><b>addActivity</b><br>Test class: testcase.Demo3_SFWithElementMethod.AccountTest</td>
-<td></td>
-<td>102</td>
-<td>testcase.Demo3_SFWithElementMethod.AccountTest@cd3fee8</td></tr>
-<tr>
-<td title='testcase.Demo2_SFGlobalMethods.OpportunityTest.addChatter()'><b>addChatter</b><br>Test class: testcase.Demo2_SFGlobalMethods.OpportunityTest</td>
-<td></td>
-<td>80</td>
-<td>testcase.Demo2_SFGlobalMethods.OpportunityTest@1d119efb</td></tr>
-<tr>
-<td title='testcase.Demo2_SFGlobalMethods.AccountTest.addChatter()'><b>addChatter</b><br>Test class: testcase.Demo2_SFGlobalMethods.AccountTest</td>
-<td></td>
-<td>90</td>
-<td>testcase.Demo2_SFGlobalMethods.AccountTest@6ef888f6</td></tr>
-<tr>
-<td title='testcase.Demo3_SFWithElementMethod.AccountTest.addChatter()'><b>addChatter</b><br>Test class: testcase.Demo3_SFWithElementMethod.AccountTest</td>
-<td></td>
-<td>117</td>
-<td>testcase.Demo3_SFWithElementMethod.AccountTest@cd3fee8</td></tr>
-<tr>
-<td title='testcase.Demo2_SFGlobalMethods.AccountTest.createAccount()'><b>createAccount</b><br>Test class: testcase.Demo2_SFGlobalMethods.AccountTest</td>
-<td></td>
-<td>231</td>
-<td>testcase.Demo2_SFGlobalMethods.AccountTest@6ef888f6</td></tr>
-<tr>
-<td title='testcase.Demo3_SFWithElementMethod.AccountTest.createAccount()'><b>createAccount</b><br>Test class: testcase.Demo3_SFWithElementMethod.AccountTest</td>
-<td></td>
-<td>198</td>
-<td>testcase.Demo3_SFWithElementMethod.AccountTest@cd3fee8</td></tr>
+<td>253</td>
+<td>testcase.Demo3_SFWithElementMethod.AccountTest@48e4374</td></tr>
 <tr>
 <td title='testcase.Demo1_GlobalSearch.SFGlobalSearch.globalSearch()'><b>globalSearch</b><br>Test class: testcase.Demo1_GlobalSearch.SFGlobalSearch</td>
 <td></td>
-<td>113</td>
-<td>testcase.Demo1_GlobalSearch.SFGlobalSearch@7c469c48</td></tr>
+<td>59</td>
+<td>testcase.Demo1_GlobalSearch.SFGlobalSearch@647fd8ce</td></tr>
 </table><p>
 </body>
 </html>

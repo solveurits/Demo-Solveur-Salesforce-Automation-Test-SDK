@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcase.Demo2_SFGlobalMethods.OpportunityTest">
+      <class name="testcase.Demo2_SFGlobalMethods.ChatterTest">
         <methods>
-          <include name="addActivity"/>
-          <include name="teardown"/>
-          <include name="setupTest"/>
           <include name="setupSuite"/>
+          <include name="Chatter"/>
+          <include name="setupTest"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- testcase.Demo2_SFGlobalMethods.OpportunityTest -->
+      </class> <!-- testcase.Demo2_SFGlobalMethods.ChatterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

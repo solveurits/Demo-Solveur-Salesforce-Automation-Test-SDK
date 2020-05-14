@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [SolveurITSDemo]" guice-stage="DEVELOPMENT" verbose="2">
-  <test thread-count="5" name="Opportunity(failed)" verbose="2">
+<suite thread-count="2" parallel="tests" name="Failed suite [SolveurITSDemo]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Demo4_Chatter(failed)">
     <classes>
-      <class name="testcase.Demo4_SFWithSpecificMethod.OpportunityTest">
+      <class name="testcase.Demo4_SFWithSpecificMethod.ChatterTest">
         <methods>
-          <include name="addChatter"/>
-          <include name="Opportunity"/>
-          <include name="addActivity"/>
-          <include name="setupSuite"/>
-          <include name="setupTest"/>
           <include name="teardown"/>
+          <include name="setupSuite"/>
+          <include name="Chatter"/>
+          <include name="setupTest"/>
         </methods>
-      </class> <!-- testcase.Demo4_SFWithSpecificMethod.OpportunityTest -->
+      </class> <!-- testcase.Demo4_SFWithSpecificMethod.ChatterTest -->
     </classes>
-  </test> <!-- Opportunity(failed) -->
+  </test> <!-- Demo4_Chatter(failed) -->
 </suite> <!-- Failed suite [SolveurITSDemo] -->

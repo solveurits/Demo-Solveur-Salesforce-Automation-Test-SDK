@@ -1,6 +1,7 @@
 package testcase.Demo4_SFWithSpecificMethod;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -44,7 +45,10 @@ public class AccountTest {
 
     @BeforeTest
     public void setupTest() throws FilloException {
-    	driver = new ChromeDriver();
+    	ChromeOptions ops = new ChromeOptions();
+        ops.addArguments("--disable-notifications");
+        ops.addArguments("start-maximized");
+    	driver = new ChromeDriver(ops);
     	//Maximize
     	driver.manage().window().maximize();
     	//Navigate URL
@@ -73,7 +77,14 @@ public class AccountTest {
         }
     }
 
-    @Test(priority = 1)
+    @Test
+    public void account()  throws FilloException
+    {
+			createAccount();
+			addActivity();
+			addChatter();
+    }
+
     public void createAccount() throws FilloException {
     	int timeoutSeconds=30;
     	//Extract Data from Excel Sheet
@@ -86,7 +97,6 @@ public class AccountTest {
     	account.createAccountWithSpecificMethod(driver, dataAccount, timeoutSeconds);
     }
     
-    @Test(priority = 2)
     public void addActivity() throws FilloException
     {
     	int timeoutSeconds=30;
@@ -104,7 +114,6 @@ public class AccountTest {
     	activity.addNewEventActivityWithSpecificMethod(driver, dataActivity, timeoutSeconds);
     }
     
-    @Test(priority = 3)
     public void addChatter() throws FilloException
     {
     	int timeoutSeconds=30;

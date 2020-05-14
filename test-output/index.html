@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SolveurITSDemo" class="navigator-link">
-              <span class="suite-name border-passed">SolveurITSDemo</span>
+              <span class="suite-name border-failed">SolveurITSDemo</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-SolveurITSDemo" class="navigator-link ">
-                    <span>D:\SolveurITS\Github\Demo-Solveur-Salesforce-Automation-Test-SDK\src\test\resources\TestNgExecute\Demo4_SFWithSpecificMethod\Opportunity.xml</span>
+                    <span>D:\SolveurITS\Github\Demo-Solveur-Salesforce-Automation-Test-SDK\src\test\resources\TestNgExecute\AllTestCase.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-SolveurITSDemo" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">10 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SolveurITSDemo" class="hide-methods failed suite-SolveurITSDemo"> (hide)</a> <!-- hide-methods failed suite-SolveurITSDemo -->
+                      <a href="#" panel-name="suite-SolveurITSDemo" class="show-methods failed suite-SolveurITSDemo"> (show)</a> <!-- show-methods failed suite-SolveurITSDemo -->
+                    </span>
+                    <div class="method-list-content failed suite-SolveurITSDemo">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SolveurITSDemo" title="testcase.Demo4_SFWithSpecificMethod.ChatterTest" class="method navigator-link" hash-for-method="Chatter">Chatter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SolveurITSDemo -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +116,7 @@
                     <div class="method-list-content passed suite-SolveurITSDemo">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SolveurITSDemo" title="testcase.Demo4_SFWithSpecificMethod.OpportunityTest" class="method navigator-link" hash-for-method="Opportunity">Opportunity</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SolveurITSDemo" title="testcase.Demo4_SFWithSpecificMethod.OpportunityTest" class="method navigator-link" hash-for-method="addActivity">addActivity</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SolveurITSDemo" title="testcase.Demo4_SFWithSpecificMethod.OpportunityTest" class="method navigator-link" hash-for-method="addChatter">addChatter</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SolveurITSDemo" title="testcase.Demo3_SFWithElementMethod.OpportunityTest" class="method navigator-link" hash-for-method="Opportunity">Opportunity</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-SolveurITSDemo -->
@@ -127,10 +131,40 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SolveurITSDemo" class="panel SolveurITSDemo">
+          <div class="suite-SolveurITSDemo-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcase.Demo4_SFWithSpecificMethod.ChatterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Chatter">
+                  </a> <!-- Chatter -->
+                  <span class="method-name">Chatter</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Element not found
+	at com.solveurits.automation.SalesforceAT.sfGetTabWebElementMethod(SalesforceAT.java:1484)
+	at com.solveurits.automation.SalesforceAT.sfGetTabWebElement(SalesforceAT.java:1477)
+	at com.solveurits.automation.SalesforceAT.sfClickTabMethod(SalesforceAT.java:1454)
+	at com.solveurits.automation.SalesforceAT.sfClickTab(SalesforceAT.java:1446)
+	at features.Chatter.clickPostTab(Chatter.java:51)
+	at features.Chatter.addPostChatterWithSpecificMethod(Chatter.java:152)
+	at testcase.Demo4_SFWithSpecificMethod.ChatterTest.Chatter(ChatterTest.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SolveurITSDemo-class-failed -->
           <div class="suite-SolveurITSDemo-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcase.Demo4_SFWithSpecificMethod.OpportunityTest</span>
+              <span class="class-name">testcase.Demo3_SFWithElementMethod.OpportunityTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -140,37 +174,68 @@
                   <span class="method-name">Opportunity</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addActivity">
-                  </a> <!-- addActivity -->
-                  <span class="method-name">addActivity</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addChatter">
-                  </a> <!-- addChatter -->
-                  <span class="method-name">addChatter</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-SolveurITSDemo-class-passed -->
         </div> <!-- panel SolveurITSDemo -->
         <div panel-name="test-xml-SolveurITSDemo" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\SolveurITS\Github\Demo-Solveur-Salesforce-Automation-Test-SDK\src\test\resources\TestNgExecute\Demo4_SFWithSpecificMethod\Opportunity.xml</span>
+            <span class="header-content">D:\SolveurITS\Github\Demo-Solveur-Salesforce-Automation-Test-SDK\src\test\resources\TestNgExecute\AllTestCase.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;SolveurITSDemo&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;2&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Opportunity&quot; verbose=&quot;2&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;SolveurITSDemo&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Demo1_GlobalSearch&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.Demo1_GlobalSearch.SFGlobalSearch&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Demo1_GlobalSearch --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Demo2_Account&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.Demo2_SFGlobalMethods.AccountTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Demo2_Account --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Demo2_Opportunity&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.Demo2_SFGlobalMethods.OpportunityTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Demo2_Opportunity --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Demo2_Chatter&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.Demo2_SFGlobalMethods.ChatterTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Demo2_Chatter --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Demo3_Account&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.Demo3_SFWithElementMethod.AccountTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Demo3_Account --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Demo3_Opportunity&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.Demo3_SFWithElementMethod.OpportunityTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Demo3_Opportunity --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Demo3_Chatter&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.Demo3_SFWithElementMethod.ChatterTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Demo3_Chatter --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Demo4_Account&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.Demo4_SFWithSpecificMethod.AccountTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Demo4_Account --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Demo4_Opportunity&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcase.Demo4_SFWithSpecificMethod.OpportunityTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Opportunity --&gt;
+  &lt;/test&gt; &lt;!-- Demo4_Opportunity --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Demo4_Chatter&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.Demo4_SFWithSpecificMethod.ChatterTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Demo4_Chatter --&gt;
 &lt;/suite&gt; &lt;!-- SolveurITSDemo --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -182,7 +247,34 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Opportunity (1 class)</span>
+                <span class="test-name">Demo1_GlobalSearch (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Demo2_Account (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Demo2_Opportunity (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Demo2_Chatter (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Demo3_Account (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Demo3_Opportunity (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Demo3_Chatter (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Demo4_Account (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Demo4_Opportunity (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Demo4_Chatter (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -208,24 +300,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addActivity')
-data.setCell(0, 2, 'testcase.Demo4_SFWithSpecificMethod.OpportunityTest')
-data.setCell(0, 3, 43760);
+data.setCell(0, 1, 'Opportunity')
+data.setCell(0, 2, 'testcase.Demo3_SFWithElementMethod.OpportunityTest')
+data.setCell(0, 3, 177163);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addChatter')
-data.setCell(1, 2, 'testcase.Demo4_SFWithSpecificMethod.OpportunityTest')
-data.setCell(1, 3, 38171);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Opportunity')
-data.setCell(2, 2, 'testcase.Demo4_SFWithSpecificMethod.OpportunityTest')
-data.setCell(2, 3, 35663);
+data.setCell(1, 1, 'Chatter')
+data.setCell(1, 2, 'testcase.Demo4_SFWithSpecificMethod.ChatterTest')
+data.setCell(1, 3, 31614);
 window.suiteTableData['SolveurITSDemo']= { tableData: data, tableDiv: 'times-div-SolveurITSDemo'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-SolveurITSDemo">
               </div> <!-- times-div-SolveurITSDemo -->
             </div> <!-- times-div -->
@@ -251,30 +339,269 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo1_GlobalSearch.SFGlobalSearch</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo2_SFGlobalMethods.AccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite</span>
+                <span class="method-start">1180 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo2_SFGlobalMethods.OpportunityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite</span>
+                <span class="method-start">1275 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo2_SFGlobalMethods.ChatterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite</span>
+                <span class="method-start">1382 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo3_SFWithElementMethod.AccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite</span>
+                <span class="method-start">1465 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo3_SFWithElementMethod.OpportunityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite</span>
+                <span class="method-start">1528 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo3_SFWithElementMethod.ChatterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite</span>
+                <span class="method-start">1623 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo4_SFWithSpecificMethod.AccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite</span>
+                <span class="method-start">1694 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">testcase.Demo4_SFWithSpecificMethod.OpportunityTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setupSuite</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">1773 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo4_SFWithSpecificMethod.ChatterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite</span>
+                <span class="method-start">1822 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo2_SFGlobalMethods.AccountTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">1250 ms</span>
+                <span class="method-start">2047 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo1_GlobalSearch.SFGlobalSearch</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">2073 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo2_SFGlobalMethods.AccountTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">Opportunity</span>
-                <span class="method-start">33827 ms</span>
+                <span class="method-name">account</span>
+                <span class="method-start">40675 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo1_GlobalSearch.SFGlobalSearch</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">addActivity</span>
-                <span class="method-start">69502 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addChatter</span>
-                <span class="method-start">113267 ms</span>
+                <span class="method-name">globalSearch</span>
+                <span class="method-start">53324 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">151443 ms</span>
+                <span class="method-start">112522 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo2_SFGlobalMethods.OpportunityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">115971 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">Opportunity</span>
+                <span class="method-start">149425 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo2_SFGlobalMethods.AccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">310678 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo2_SFGlobalMethods.ChatterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">313558 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo2_SFGlobalMethods.OpportunityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">318134 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo3_SFWithElementMethod.AccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">322236 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo2_SFGlobalMethods.ChatterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Chatter</span>
+                <span class="method-start">340421 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo3_SFWithElementMethod.AccountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">account</span>
+                <span class="method-start">361234 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo2_SFGlobalMethods.ChatterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">387233 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo3_SFWithElementMethod.OpportunityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">390934 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">Opportunity</span>
+                <span class="method-start">414403 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">591574 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo3_SFWithElementMethod.ChatterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">597046 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo3_SFWithElementMethod.AccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">614865 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo4_SFWithSpecificMethod.AccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">620744 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo3_SFWithElementMethod.ChatterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Chatter</span>
+                <span class="method-start">641136 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo4_SFWithSpecificMethod.AccountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">account</span>
+                <span class="method-start">660473 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo3_SFWithElementMethod.ChatterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">706744 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo4_SFWithSpecificMethod.OpportunityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">710807 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">Opportunity</span>
+                <span class="method-start">734646 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo4_SFWithSpecificMethod.AccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">906860 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo4_SFWithSpecificMethod.ChatterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">910068 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo4_SFWithSpecificMethod.OpportunityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">916035 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.Demo4_SFWithSpecificMethod.ChatterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Chatter</span>
+                <span class="method-start">944597 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">976213 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
